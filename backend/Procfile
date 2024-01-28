@@ -1,0 +1,3 @@
+web: node build/server.js
+events: node build/ace events:listen
+jobs: node build/ace jobs:listen

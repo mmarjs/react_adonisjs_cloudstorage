@@ -1,0 +1,5 @@
+Cloud filestorage project
+Backend api: Node / Typescript
+Frontend: React / Typescript
+Testing: Cypress
+https://evidencelocker.com/

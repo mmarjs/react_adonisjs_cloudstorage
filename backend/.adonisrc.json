@@ -1,0 +1,55 @@
+{
+  "typescript": true,
+  "commands": [
+    "./app/Event/EventListener",
+    "./app/Jobs/JobListener",
+    "./app/Commands/CreateAdmin",
+    "./app/Commands/BulkImportWorkGroupData",
+    "./app/Commands/CreateAccountUser",
+    "./app/Commands/DeleteWorkGroupFolder",
+    "./app/Commands/DeletePendingWorkGroupData",
+    "./app/Commands/CountWorkGroupData",
+    "./app/Commands/ExportWorkGroupFileReport",
+    "./app/Commands/VerifyPassword",
+    "./app/Commands/PersonalFolderUpgrade",
+    "./app/Commands/FindLargestWorkGroupFolder",
+    "./app/Commands/SetUserPassword",
+    "./app/Commands/ReconcileWorkgroupData",
+    "./app/Commands/RemoveUser",
+    "./app/Commands/FindTotalFileSize",
+    "./app/Commands/Temp/CompanyChannel",
+    "./app/Commands/Temp/MaxEmployees",
+    "./app/Commands/Temp/Settings",
+    "./app/Commands/Temp/ShareLinks",
+    "./app/Commands/Temp/UserPermission",
+    "./app/Commands/Temp/UserPreferences",
+    "./app/Commands/Temp/UserRole",
+    "./app/Commands/Temp/UserChannel",
+    "@adonisjs/core/build/commands",
+    "@adonisjs/repl/build/commands",
+    "@adonisjs/lucid/build/commands"
+  ],
+  "exceptionHandlerNamespace": "App/Lib/Handler",
+  "aliases": {
+    "App": "app",
+    "Config": "config",
+    "Database": "database",
+    "Contracts": "contracts"
+  },
+  "preloads": [
+    "./start/routes",
+    "./start/kernel",
+    {
+      "file": "./start/system-events",
+      "environment": ["console", "repl", "web"]
+    }
+  ],
+  "providers": ["./providers/AppProvider", "@adonisjs/core", "@adonisjs/lucid", "@adonisjs/redis"],
+  "aceProviders": ["@adonisjs/repl"],
+  "metaFiles": [
+    {
+      "pattern": "public/**",
+      "reloadServer": false
+    }
+  ]
+}

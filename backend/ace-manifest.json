@@ -1,0 +1,557 @@
+{
+  "commands": {
+    "events:listen": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": true
+      },
+      "commandPath": "./app/Event/EventListener",
+      "commandName": "events:listen",
+      "description": "Event Listener",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "jobs:listen": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": true
+      },
+      "commandPath": "./app/Jobs/JobListener",
+      "commandName": "jobs:listen",
+      "description": "Listen for Jobs",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "admin:create": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/CreateAdmin",
+      "commandName": "admin:create",
+      "description": "Create an admin",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:bulk_import": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/BulkImportWorkGroupData",
+      "commandName": "workgroup:bulk_import",
+      "description": "Parse an export from the batch import tool",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "user:create": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/CreateAccountUser",
+      "commandName": "user:create",
+      "description": "Create Account User",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:delete_folder": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/DeleteWorkGroupFolder",
+      "commandName": "workgroup:delete_folder",
+      "description": "Delete WorkGroup Folder in db only",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:delete_pending": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/DeletePendingWorkGroupData",
+      "commandName": "workgroup:delete_pending",
+      "description": "Delete Pending WorkGroup Data",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:count": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/CountWorkGroupData",
+      "commandName": "workgroup:count",
+      "description": "Count Work Group Files and Folders",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:file_report": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/ExportWorkGroupFileReport",
+      "commandName": "workgroup:file_report",
+      "description": "Export WorkGroup File Paths to Wasabi",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "password:verify": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/VerifyPassword",
+      "commandName": "password:verify",
+      "description": "Validate password against salt and hash",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "personal:upgrade_company": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/PersonalFolderUpgrade",
+      "commandName": "personal:upgrade_company",
+      "description": "Sync companyId for each personal folder",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:largest_folder": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/FindLargestWorkGroupFolder",
+      "commandName": "workgroup:largest_folder",
+      "description": "Find Largest WorkGroup Folder in a Case. This calculates direct children not sub folders",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "user:set_password": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/SetUserPassword",
+      "commandName": "user:set_password",
+      "description": "Set User Password",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "workgroup:reconcile": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/ReconcileWorkgroupData",
+      "commandName": "workgroup:reconcile",
+      "description": "Reconcile WorkGroup Data with Wasabi",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "user:remove": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/RemoveUser",
+      "commandName": "user:remove",
+      "description": "Remove User Non Account Owners",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "folders:find_size": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/FindTotalFileSize",
+      "commandName": "folders:find_size",
+      "description": "Find Total File Sizes",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:channels": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/CompanyChannel",
+      "commandName": "backfill:channels",
+      "description": "Backfill company channels 2021",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:max_employees": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/MaxEmployees",
+      "commandName": "backfill:max_employees",
+      "description": "Backfill Max Employees for Auth Upgrade Nov 2021",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:settings": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/Settings",
+      "commandName": "backfill:settings",
+      "description": "Backfill Notification Settings",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:share_links": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/ShareLinks",
+      "commandName": "backfill:share_links",
+      "description": "Backfill Share Link Resource Id",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:permissions": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/UserPermission",
+      "commandName": "backfill:permissions",
+      "description": "Backfill user permissions for Auth Upgrade Nov 2021",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:preferences": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/UserPreferences",
+      "commandName": "backfill:preferences",
+      "description": "Backfill user prefrences",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:roles": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/UserRole",
+      "commandName": "backfill:roles",
+      "description": "Backfill account owner roles for auth upgrade Nov 2021",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "backfill:user_channels": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./app/Commands/Temp/UserChannel",
+      "commandName": "backfill:user_channels",
+      "description": "Backfill user channels 2021",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "dump:rcfile": {
+      "settings": {},
+      "commandPath": "@adonisjs/core/build/commands/DumpRc",
+      "commandName": "dump:rcfile",
+      "description": "Dump contents of .adonisrc.json file along with defaults",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "list:routes": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/core/build/commands/ListRoutes",
+      "commandName": "list:routes",
+      "description": "List application routes",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "json",
+          "propertyName": "json",
+          "type": "boolean",
+          "description": "Output as JSON"
+        }
+      ]
+    },
+    "generate:key": {
+      "settings": {},
+      "commandPath": "@adonisjs/core/build/commands/GenerateKey",
+      "commandName": "generate:key",
+      "description": "Generate a new APP_KEY secret",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "repl": {
+      "settings": {
+        "loadApp": true,
+        "environment": "repl",
+        "stayAlive": true
+      },
+      "commandPath": "@adonisjs/repl/build/commands/AdonisRepl",
+      "commandName": "repl",
+      "description": "Start a new REPL session",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "db:seed": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/DbSeed",
+      "commandName": "db:seed",
+      "description": "Execute database seeder files",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "connection",
+          "propertyName": "connection",
+          "type": "string",
+          "description": "Define a custom database connection for the seeders",
+          "alias": "c"
+        },
+        {
+          "name": "interactive",
+          "propertyName": "interactive",
+          "type": "boolean",
+          "description": "Run seeders in interactive mode",
+          "alias": "i"
+        },
+        {
+          "name": "files",
+          "propertyName": "files",
+          "type": "array",
+          "description": "Define a custom set of seeders files names to run",
+          "alias": "f"
+        }
+      ]
+    },
+    "make:model": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/MakeModel",
+      "commandName": "make:model",
+      "description": "Make a new Lucid model",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "name",
+          "name": "name",
+          "required": true,
+          "description": "Name of the model class"
+        }
+      ],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "migration",
+          "propertyName": "migration",
+          "type": "boolean",
+          "alias": "m",
+          "description": "Generate the migration for the model"
+        },
+        {
+          "name": "controller",
+          "propertyName": "controller",
+          "type": "boolean",
+          "alias": "c",
+          "description": "Generate the controller for the model"
+        }
+      ]
+    },
+    "make:migration": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/MakeMigration",
+      "commandName": "make:migration",
+      "description": "Make a new migration file",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "name",
+          "name": "name",
+          "required": true,
+          "description": "Name of the migration file"
+        }
+      ],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "connection",
+          "propertyName": "connection",
+          "type": "string",
+          "description": "The connection flag is used to lookup the directory for the migration file"
+        },
+        {
+          "name": "folder",
+          "propertyName": "folder",
+          "type": "string",
+          "description": "Pre-select a migration directory"
+        },
+        {
+          "name": "create",
+          "propertyName": "create",
+          "type": "string",
+          "description": "Define the table name for creating a new table"
+        },
+        {
+          "name": "table",
+          "propertyName": "table",
+          "type": "string",
+          "description": "Define the table name for altering an existing table"
+        }
+      ]
+    },
+    "make:seeder": {
+      "settings": {},
+      "commandPath": "@adonisjs/lucid/build/commands/MakeSeeder",
+      "commandName": "make:seeder",
+      "description": "Make a new Seeder file",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "name",
+          "name": "name",
+          "required": true,
+          "description": "Name of the seeder class"
+        }
+      ],
+      "aliases": [],
+      "flags": []
+    },
+    "migration:run": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/Migration/Run",
+      "commandName": "migration:run",
+      "description": "Run pending migrations",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "connection",
+          "propertyName": "connection",
+          "type": "string",
+          "description": "Define a custom database connection",
+          "alias": "c"
+        },
+        {
+          "name": "force",
+          "propertyName": "force",
+          "type": "boolean",
+          "description": "Explicitly force to run migrations in production"
+        },
+        {
+          "name": "dry-run",
+          "propertyName": "dryRun",
+          "type": "boolean",
+          "description": "Print SQL queries, instead of running the migrations"
+        }
+      ]
+    },
+    "migration:rollback": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/Migration/Rollback",
+      "commandName": "migration:rollback",
+      "description": "Rollback migrations to a given batch number",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "connection",
+          "propertyName": "connection",
+          "type": "string",
+          "description": "Define a custom database connection",
+          "alias": "c"
+        },
+        {
+          "name": "force",
+          "propertyName": "force",
+          "type": "boolean",
+          "description": "Explictly force to run migrations in production"
+        },
+        {
+          "name": "dry-run",
+          "propertyName": "dryRun",
+          "type": "boolean",
+          "description": "Print SQL queries, instead of running the migrations"
+        },
+        {
+          "name": "batch",
+          "propertyName": "batch",
+          "type": "number",
+          "description": "Define custom batch number for rollback. Use 0 to rollback to initial state"
+        }
+      ]
+    },
+    "migration:status": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "@adonisjs/lucid/build/commands/Migration/Status",
+      "commandName": "migration:status",
+      "description": "Check migrations current status.",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "connection",
+          "propertyName": "connection",
+          "type": "string",
+          "description": "Define a custom database connection",
+          "alias": "c"
+        }
+      ]
+    }
+  },
+  "aliases": {}
+}
